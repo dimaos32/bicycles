@@ -63,3 +63,13 @@
     vertical-align: middle;
   }
 }
+
+@media (max-width: $mobile-width) {
+  .contacts {
+    flex-direction: column;
+  }
+
+  .contacts__link {
+    margin: 0;
+  }
+}
