@@ -25,3 +25,25 @@
     background: $btn--bg-active;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .btn {
+    padding: 11px 18px;
+
+    &:hover,
+    &:focus {
+      padding: 10px 17px;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .btn {
+    padding: 11px 24px;
+
+    &:hover,
+    &:focus {
+      padding: 10px 23px;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 .header {
   margin-bottom: 150px;
   min-height: 825px;
-  background: $header--bg url('../img/bike-desktop@1x.png') center / cover no-repeat;
+  background: $header--bg url("../img/bike-desktop@1x.png") center / cover no-repeat;
 }
 
 .header__container {
@@ -18,9 +18,9 @@
   h1 {
     margin: 0;
     margin-bottom: 24px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 46px;
-    line-height: 1.39;
+    line-height: 1.4;
     color: $header--txt;
   }
 
@@ -53,6 +53,93 @@
 
 @media (min-resolution: 2dppx) {
   .header {
-    background-image: url('../img/bike-desktop@2x.png');
+    background-image: url("../img/bike-desktop@2x.png");
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header {
+    margin-bottom: 70px;
+    min-height: 340px;
+    background: none;
+  }
+
+  .header__container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header__about {
+    width: 100%;
+    min-height: 340px;
+    margin-bottom: 70px;
+    padding: 25px 21px;
+    background: $header--bg url("../img/bike-tablet@1x.jpg") center / cover no-repeat;
+
+    h1 {
+      width: 450px;
+      margin: 0 auto 20px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    p {
+      width: 450px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.8;
+      text-align: center;
+    }
+  }
+
+  .header__logo {
+    margin-bottom: 90px;
+  }
+
+  .header__write-us {
+    width: 324px;
+    margin: 0 auto;
+    padding: 0 21px;
+
+    p {
+      margin-bottom: 30px;
+      font-size: 18px;
+      line-height: 1.55;
+      color: $page--txt;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header {
+    min-height: 389px;
+  }
+
+  .header__about {
+    min-height: 389px;
+    padding: 25px 16px;
+    background-image: url("../img/bike-mobile@1x.jpg");
+
+    h1 {
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+
+  .header__logo {
+    margin-bottom: 75px;
+  }
+
+  .header__write-us {
+    width: 100%;
+    max-width: 324px;
+    padding: 0 16px;
+
+    p {
+      margin-bottom: 20px;
+    }
   }
 }

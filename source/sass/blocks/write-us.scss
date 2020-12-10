@@ -21,3 +21,29 @@
     }
   }
 }
+
+@media (max-width: $tablet-width) {
+  .write-us {
+    input {
+      padding: 11px 18px;
+
+      &:hover,
+      &:focus {
+        padding: 10px 17px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .write-us {
+    input {
+      padding: 11px 24px;
+
+      &:hover,
+      &:focus {
+        padding: 10px 23px;
+      }
+    }
+  }
+}
