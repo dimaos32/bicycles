@@ -50,3 +50,9 @@
     color: $header--txt;
   }
 }
+
+@media (min-resolution: 2dppx) {
+  .header {
+    background-image: url('../img/bike-desktop@2x.png');
+  }
+}
