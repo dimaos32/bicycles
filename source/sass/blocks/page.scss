@@ -1,5 +1,8 @@
 .page {
-  font-family: $montserrat;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100vh;
+  font-family: $opensans;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
