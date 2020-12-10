@@ -68,7 +68,18 @@
   <div class="container">
     <h2>Как нас найти?</h2>
     <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-    <img src="img/map-desktop@1x.png" width="957" height="530" alt="Магазин Велосипеды по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19">
+
+    <picture>
+      <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+      <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+      <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+      <source media="(max-width: 767px)" srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.png 2x">
+      <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+      <img
+        src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x"
+        width="957" height="530"
+        alt="Магазин Велосипеды по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19">
+    </picture>
 
     <ul class="footer__contacts contacts">
       <li>
