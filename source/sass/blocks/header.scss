@@ -110,6 +110,12 @@
   }
 }
 
+@media (min-resolution: 2dppx) and (max-width: $mobile-width) {
+  .header__about {
+    background-image: url("../img/bike-tablet@2x.jpg");
+  }
+}
+
 @media (max-width: $mobile-width) {
   .header {
     min-height: 389px;
@@ -141,5 +147,11 @@
     p {
       margin-bottom: 20px;
     }
+  }
+}
+
+@media (min-resolution: 2dppx) and (max-width: $mobile-width) {
+  .header__about {
+    background-image: url("../img/bike-mobile@2x.jpg");
   }
 }
