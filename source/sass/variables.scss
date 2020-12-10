@@ -6,7 +6,9 @@ $black-almost: #070707;
 $black-nigth: #131314;
 $black-coal: #1c1c1c;
 $grey-dark-extra: #1f1f1f;
+$grey: #48494d;
 $grey-ligth: #c9ccd4;
+$white-milk: #f6f6f6;
 $white-almost: #f6f7f9;
 
 $white: #ffffff;
@@ -42,7 +44,13 @@ $header--bg: $black-nigth;
 $navigation--link: rgba($white, 0.7);
 $navigation--link-hover: $site;
 $navigation--link-active: rgba($site, 0.7);
+$navigation--bg: $black-nigth;
 $navigation--border: rgba($white, 0.2);
+$navigation--list-bg-opened: $white;
+$navigation--link-txt-opened: $grey;
+$navigation--link-bg-opened: $white-milk;
+$navigation--toggle-bg: $site;
+$navigation--toggle-burger: $black;
 
 $write-us--txt: rgba($black-coal, 0.5);
 $write-us--bg: $white;
