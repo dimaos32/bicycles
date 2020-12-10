@@ -1,0 +1,31 @@
+.footer {
+  margin-bottom: 100px;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1;
+    text-align: center;
+    color: $footer--txt;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: center;
+    color: $footer--txt-alt;
+  }
+
+  img {
+    display: block;
+    width: 957px;
+    height: 530px;
+    margin: 0 auto 30px;
+    background-color: $footer--map-bg;
+    object-fit: cover;
+  }
+}

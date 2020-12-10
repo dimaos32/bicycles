@@ -8,6 +8,7 @@ $black-coal: #1c1c1c;
 $grey-dark-extra: #1f1f1f;
 $grey: #48494d;
 $grey-ligth: #c9ccd4;
+$grey-extra: #e6e6e6;
 $white-milk: #f6f6f6;
 $white-almost: #f6f7f9;
 
@@ -37,6 +38,16 @@ $btn--bg-active: $site;
 $page--txt: $black;
 $page--bg: $white;
 
+$contacts--link: rgba($black, 0.5);
+$contacts--link-hover: $site;
+$contacts--link-active: rgba($site, 0.7);
+$contacts--icon: $site;
+$contacts--icon-active: rgba($site, 0.7);
+
+$footer--txt: $grey-dark-extra;
+$footer--txt-alt: rgba($black, 0.7);
+$footer--map-bg: $grey-extra;
+
 $header--txt: $white;
 $header--txt-alt: rgba($white, 0.8);
 $header--bg: $black-nigth;
@@ -44,7 +55,7 @@ $header--bg: $black-nigth;
 $navigation--link: rgba($white, 0.7);
 $navigation--link-hover: $site;
 $navigation--link-active: rgba($site, 0.7);
-$navigation--bg: $black-nigth;
+$navigation--bg: $black-coal;
 $navigation--border: rgba($white, 0.2);
 $navigation--list-bg-opened: $white;
 $navigation--link-txt-opened: $grey;
