@@ -1,0 +1,23 @@
+.write-us {
+  input {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 11px 28px;
+    font: inherit;
+    font-size: 15px;
+    line-height: 1.6;
+    color: $write-us--txt;
+    background: $write-us--bg;
+    border: 1px solid $write-us--border;
+    border-radius: 4px;
+    outline: none;
+
+    &:hover,
+    &:focus {
+      padding: 10px 27px;
+      border: 2px solid $site;
+    }
+  }
+}

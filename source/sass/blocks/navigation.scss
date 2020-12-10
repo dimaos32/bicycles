@@ -1,0 +1,38 @@
+.navigation {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 255px;
+}
+
+.navigation__list {
+  width: 875px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid $navigation--border;
+}
+
+.navigation__link {
+  display: block;
+  padding: 9px 20px;
+  font-weight: 300;
+  line-height: 2;
+  color: $navigation--link;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    margin-bottom: -1px;
+    color: $navigation--link-hover;
+    border-bottom: 1px solid $navigation--link-hover;
+  }
+
+  &:active {
+    margin-bottom: 0;
+    color: $navigation--link-active;
+    border-bottom: none;
+  }
+}

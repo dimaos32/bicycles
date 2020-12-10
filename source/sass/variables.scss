@@ -4,14 +4,14 @@ $black: #000000;
 
 $black-almost: #070707;
 $black-nigth: #131314;
-$black-coal: #1C1C1C;
-$grey-dark-extra: #1F1F1F;
-$grey-ligth: #C9CCD4;
-$white-almost: #F6F7F9;
+$black-coal: #1c1c1c;
+$grey-dark-extra: #1f1f1f;
+$grey-ligth: #c9ccd4;
+$white-almost: #f6f7f9;
 
 $white: #ffffff;
 
-$site: #0AD9C6;
+$site: #0ad9c6;
 
 // Fonts
 
@@ -25,5 +25,25 @@ $desktop-width-only: 1024px;
 
 // Blocks
 
+$btn--txt: $black;
+$btn--txt-hover: $site;
+$btn--txt-active: $white;
+$btn--bg: $site;
+$btn--bg-hover: $white;
+$btn--bg-active: $site;
+
 $page--txt: $black;
 $page--bg: $white;
+
+$header--txt: $white;
+$header--txt-alt: rgba($white, 0.8);
+$header--bg: $black-nigth;
+
+$navigation--link: rgba($white, 0.7);
+$navigation--link-hover: $site;
+$navigation--link-active: rgba($site, 0.7);
+$navigation--border: rgba($white, 0.2);
+
+$write-us--txt: rgba($black-coal, 0.5);
+$write-us--bg: $white;
+$write-us--border: $grey-ligth;
