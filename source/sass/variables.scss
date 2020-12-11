@@ -25,6 +25,7 @@ $opensans: "Open Sans", verdana, sans-serif;
 $mobile-width: 767px;
 $tablet-width: 1023px;
 $desktop-width-only: 1024px;
+$desktop-width-max: 1200px;
 
 // Blocks
 
@@ -37,6 +38,9 @@ $btn--bg-active: $site;
 
 $page--txt: $black;
 $page--bg: $white;
+
+$about-us--txt: $grey-dark-extra;
+$about-us--counter: $site;
 
 $contacts--link: rgba($black, 0.5);
 $contacts--link-hover: $site;
