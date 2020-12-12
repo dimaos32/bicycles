@@ -103,7 +103,7 @@
     }
 
     .navigation--opened & {
-      position: absolute;
+      position: fixed;
       height: 100vh;
       padding-top: 100px;
       background-color: $navigation--list-bg-opened;

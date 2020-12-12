@@ -9,4 +9,8 @@
   line-height: 1.75;
   color: $page--txt;
   background-color: $page--bg;
+
+  &--no-scroll {
+    overflow: hidden;
+  }
 }

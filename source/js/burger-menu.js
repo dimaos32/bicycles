@@ -2,11 +2,13 @@
 
 (function () {
 
-  var navigation = document.querySelector('.navigation');
+  var page = document.querySelector('.page');
+  var navigation = page.querySelector('.navigation');
   var navigationToggle = navigation.querySelector('.navigation__toggle');
   var navigationList = navigation.querySelector('.navigation__list');
 
   var openMenu = function () {
+    page.classList.add('page--no-scroll');
     navigation.classList.remove('navigation--closed');
     navigation.classList.add('navigation--opened');
     navigationList.addEventListener('click', onOutsideMenuClick);
@@ -14,6 +16,7 @@
   };
 
   var closeMenu = function () {
+    page.classList.remove('page--no-scroll');
     navigation.classList.remove('navigation--opened');
     navigation.classList.add('navigation--closed');
     navigationList.removeEventListener('click', onOutsideMenuClick);
