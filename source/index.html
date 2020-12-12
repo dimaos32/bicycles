@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Велосипеды</title>
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font">
+  <link rel="preload" href="fonts/opensans-semibold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans-bold.woff2" as="font">
+  <link rel="preload" href="fonts/opensans-ligth.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -20,19 +24,19 @@
 
       <ul class="navigation__list">
         <li>
-          <a class="navigation__link" href="#">О нас</a>
+          <a class="navigation__link" href="#about-us">О нас</a>
         </li>
 
         <li>
-          <a class="navigation__link" href="#">Виды велосипедов</a>
+          <a class="navigation__link" href="#types">Виды велосипедов</a>
         </li>
 
         <li>
-          <a class="navigation__link" href="#">Видео про велосипеды</a>
+          <a class="navigation__link" href="#video">Видео про велосипеды</a>
         </li>
 
         <li>
-          <a class="navigation__link" href="#">Контакты</a>
+          <a class="navigation__link" href="#contacts">Контакты</a>
         </li>
       </ul>
     </nav>
@@ -48,7 +52,7 @@
 
     <div class="header__write-us">
       <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-      <form class="write-us" action="https:\\echo.htmlacademy.ru" method="post">
+      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden" for="customer">Ваше имя</label>
         <input type="text" name="customer" id="customer" placeholder="Введите Ваше Имя">
         <label class="visually-hidden" for="phone">Ваштелефон (обязательно)</label>
@@ -60,8 +64,8 @@
   </div>
 </header>
 
-<main">
-  <section class="about-us">
+<main>
+  <section class="about-us" id="about-us">
     <div class="container">
       <h2>Несколько фактов о нас</h2>
       <ul class="about-us__list">
@@ -84,7 +88,7 @@
     </div>
   </section>
 
-  <section class="types">
+  <section class="types" id="types">
     <div class="container">
       <h2>Виды велосипедов</h2>
 
@@ -92,11 +96,17 @@
         <li class="types__item">
           <a class="types__link" href="#">
             <picture>
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/road-bike-tablet@1x.webp 1x, img/road-bike-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/road-bike-desktop@1x.webp 1x, img/road-bike-desktop@2x.webp 2x">
-              <source media="(max-width: 1023px)" srcset="img/road-bike-tablet@1x.jpg 1x, img/road-bike-tablet@2x.jpg 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/road-bike-tablet@1x.webp 1x, img/road-bike-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/road-bike-desktop@1x.webp 1x, img/road-bike-desktop@2x.webp 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/road-bike-tablet@1x.jpg 1x, img/road-bike-tablet@2x.jpg 2x">
+              <!-- 1х: 342px; 2x: 684px -->
               <img
-                src="img/road-bike-desktop@1x.jpg" srcset="img/road-bike-desktop@2x.jpg 2x"
+                src="img/road-bike-desktop@1x.jpg"
+                srcset="img/road-bike-desktop@2x.jpg 2x"
+                width="342" h="503"
                 alt="Велосипед в ретро-стиле у старо, потрепаной кирпичной стены, которая, к тому же, вся в живой зелени">
             </picture>
 
@@ -107,11 +117,17 @@
         <li class="types__item">
           <a class="types__link" href="#">
             <picture>
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/mountain-bike-tablet@1x.webp 1x, img/mountain-bike-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/mountain-bike-desktop@1x.webp 1x, img/mountain-bike-desktop@2x.webp 2x">
-              <source media="(max-width: 1023px)" srcset="img/mountain-bike-tablet@1x.jpg 1x, img/mountain-bike-tablet@2x.jpg 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/mountain-bike-tablet@1x.webp 1x, img/mountain-bike-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/mountain-bike-desktop@1x.webp 1x, img/mountain-bike-desktop@2x.webp 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/mountain-bike-tablet@1x.jpg 1x, img/mountain-bike-tablet@2x.jpg 2x">
+              <!-- 1х: 342px; 2x: 684px -->
               <img
-                src="img/mountain-bike-desktop@1x.jpg" srcset="img/mountain-bike-desktop@2x.jpg 2x"
+                src="img/mountain-bike-desktop@1x.jpg"
+                srcset="img/mountain-bike-desktop@2x.jpg 2x"
+                width="342" h="566"
                 alt="Современный горные велосипед на одной из вершин горного массива">
             </picture>
 
@@ -122,11 +138,17 @@
         <li class="types__item">
           <a class="types__link" href="#">
             <picture>
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/kid-bike-tablet@1x.webp 1x, img/kid-bike-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/kid-bike-desktop@1x.webp 1x, img/kid-bike-desktop@2x.webp 2x">
-              <source media="(max-width: 1023px)" srcset="img/kid-bike-tablet@1x.jpg 1x, img/kid-bike-tablet@2x.jpg 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/kid-bike-tablet@1x.webp 1x, img/kid-bike-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/kid-bike-desktop@1x.webp 1x, img/kid-bike-desktop@2x.webp 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/kid-bike-tablet@1x.jpg 1x, img/kid-bike-tablet@2x.jpg 2x">
+              <!-- 1х: 342px; 2x: 684px -->
               <img
-                src="img/kid-bike-desktop@1x.jpg" srcset="img/kid-bike-desktop@2x.jpg 2x"
+                src="img/kid-bike-desktop@1x.jpg"
+                srcset="img/kid-bike-desktop@2x.jpg 2x"
+                width="342" h="513"
                 alt="Милый детский велосипед в розозовых и белых цветах у стены старого дома">
             </picture>
 
@@ -137,20 +159,28 @@
     </div>
   </section>
 
-  <section class="video">
+  <section class="video" id="video">
     <div class="container">
       <h2>Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
 
       <div class="video__inner">
         <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/cover-bike-mobile@1x.webp 1x, img/cover-bike-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1023px)" srcset="img/cover-bike-tablet@1x.webp 1x, img/cover-bike-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/cover-bike-desktop@1x.webp 1x, img/cover-bike-desktop@2x.webp 2x">
-          <source media="(max-width: 767px)" srcset="img/cover-bike-mobile@1x.jpg 1x, img/cover-bike-mobile@2x.jpg 2x">
-          <source media="(max-width: 1023px)" srcset="img/cover-bike-tablet@1x.jpg 1x, img/cover-bike-tablet@2x.jpg 2x">
+          <source type="image/webp" media="(max-width: 767px)"
+            srcset="img/cover-bike-mobile@1x.webp 1x, img/cover-bike-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)"
+            srcset="img/cover-bike-tablet@1x.webp 1x, img/cover-bike-tablet@2x.webp 2x">
+          <source type="image/webp"
+            srcset="img/cover-bike-desktop@1x.webp 1x, img/cover-bike-desktop@2x.webp 2x">
+          <source media="(max-width: 767px)"
+            srcset="img/cover-bike-mobile@1x.jpg 1x, img/cover-bike-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)"
+            srcset="img/cover-bike-tablet@1x.jpg 1x, img/cover-bike-tablet@2x.jpg 2x">
+          <!-- 1х: 929px; 2x: 1858px -->
           <img
-            src="img/cover-bike-desktop@1x.jpg" srcset="img/cover-bike-desktop@2x.jpg 2x"
+            src="img/cover-bike-desktop@1x.jpg"
+            srcset="img/cover-bike-desktop@2x.jpg 2x"
+            width="929" h="522"
             alt="Видео, в котором просто и понятно рассказывается о том, как правильно подобрать себе велосипед">
         </picture>
 
@@ -165,19 +195,27 @@
   </section>
 </main>
 
-<footer class="footer">
+<footer class="footer" id="contacts">
   <div class="footer__container container">
     <h2>Как нас найти?</h2>
     <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
 
     <picture>
-      <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-      <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-      <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-      <source media="(max-width: 767px)" srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.png 2x">
-      <source media="(max-width: 1023px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+      <source type="image/webp" media="(max-width: 767px)"
+        srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+      <source type="image/webp" media="(max-width: 1023px)"
+        srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+      <source type="image/webp"
+        srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+      <source media="(max-width: 767px)"
+        srcset="img/map-mobile@1x.png 1x, img/map-mobile@2x.png 2x">
+      <source media="(max-width: 1023px)"
+        srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+      <!-- 1х: 957px; 2x: 1914px -->
       <img
-        src="img/map-desktop@1x.png" srcset="img/map-desktop@2x.png 2x"
+        src="img/map-desktop@1x.png"
+        srcset="img/map-desktop@2x.png 2x"
+        width="957" h="530"
         alt="Магазин Велосипеды по адресу г. Санкт-Петербург, ул. Большая Конюшенная, д. 19">
     </picture>
 
@@ -185,7 +223,7 @@
       <li>
         <a class="contacts__link contacts__link--email" href="mailto:puteshestviemechta@gmail.ru">
           <svg width="26" height="21">
-            <use xlink:href="img/sprite_auto.svg#icon-email">
+            <use xlink:href="img/sprite_auto.svg#icon-email"></use>
           </svg>
           <span>puteshestviemechta@gmail.ru</span>
         </a>
@@ -194,7 +232,7 @@
       <li>
         <a class="contacts__link contacts__link--phone" href="tel:+749978468446">
           <svg width="22" height="24">
-            <use xlink:href="img/sprite_auto.svg#icon-phone">
+            <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
           </svg>
           <span>+7 (499) -784-684-46</span>
         </a>
@@ -203,7 +241,7 @@
   </div>
 </footer>
 
-<script src="../js/script.js"></script>
+<script src="../js/main.js"></script>
 
 </body>
 </html>
