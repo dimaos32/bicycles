@@ -136,6 +136,33 @@
       </ul>
     </div>
   </section>
+
+  <section class="video">
+    <div class="container">
+      <h2>Видео про велосипеды</h2>
+      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+
+      <div class="video__inner">
+        <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/cover-bike-mobile@1x.webp 1x, img/cover-bike-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/cover-bike-tablet@1x.webp 1x, img/cover-bike-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/cover-bike-desktop@1x.webp 1x, img/cover-bike-desktop@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="img/cover-bike-mobile@1x.jpg 1x, img/cover-bike-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="img/cover-bike-tablet@1x.jpg 1x, img/cover-bike-tablet@2x.jpg 2x">
+          <img
+            src="img/cover-bike-desktop@1x.jpg" srcset="img/cover-bike-desktop@2x.jpg 2x"
+            alt="Видео, в котором просто и понятно рассказывается о том, как правильно подобрать себе велосипед">
+        </picture>
+
+        <button class="video__btn" type="button">
+          <svg viewbox="0 0 13 19" width="13" height="19">
+            <polygon points="0,0 13,10 0,19" />
+          </svg>
+          <span class="visually-hidden">Запустить видео</span>
+        </button>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="footer">
