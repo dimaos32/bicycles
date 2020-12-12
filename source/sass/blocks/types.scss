@@ -66,7 +66,10 @@
     z-index: 2;
     width: 342px;
     height: auto;
+    min-height: 500px;
     margin-bottom: 20px;
+    color:$page--txt;
+    background-color: $types--img-bg;
     border-radius: 10px;
     object-fit: cover;
     transition: all 0.3s ease;
@@ -164,6 +167,7 @@
     img {
       width: 270px;
       height: 300px;
+      min-height: 300px;
     }
   }
 }

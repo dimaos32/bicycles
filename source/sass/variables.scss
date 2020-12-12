@@ -16,6 +16,8 @@ $white: #ffffff;
 
 $site: #0ad9c6;
 
+$special-types: #d1d1cb;
+
 // Fonts
 
 $opensans: "Open Sans", verdana, sans-serif;
@@ -71,6 +73,7 @@ $types--txt: $grey-dark-extra;
 $types--link-hover: $site;
 $types--link-active: rgba($site, 0.7);
 $types--bg: $white-almost;
+$types--img-bg: $special-types;
 $types--decor: $site;
 
 $video--txt: $white;

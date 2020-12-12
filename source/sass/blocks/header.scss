@@ -119,7 +119,7 @@
   }
 }
 
-@media (min-resolution: 2dppx) and (max-width: $mobile-width) {
+@media (min-resolution: 2dppx) and (max-width: $tablet-width) {
   .header__about {
     background-image: url("../img/bike-tablet@2x.jpg");
   }
