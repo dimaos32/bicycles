@@ -2,22 +2,34 @@
 
 (function () {
 
-  var RE_PHONE = /^[\d]{10,11}$/;
+  var writeUsForm = document.querySelector('.write-us');
+  var customerInput = writeUsForm.querySelector('#customer');
+  var phoneInput = writeUsForm.querySelector('#phone');
 
-  var phoneInput = document.querySelector('#phone');
+  writeUsForm.addEventListener('submit', function (evt) {
+    if (!customerInput.value || !phoneInput.value) {
+      evt.preventDefault();
 
-  var onPhoneInput = function () {
-    if (phoneInput.value && RE_PHONE.test(phoneInput.value)) {
-      phoneInput.classList.remove('write-us__error');
-      phoneInput.setCustomValidity('');
-    } else {
-      phoneInput.classList.add('write-us__error');
-      phoneInput.setCustomValidity('Введите корректный номер телефона из 10 или 11 цифр без пробелов и тире.');
+      if (!phoneInput.value) {
+        phoneInput.classList.add('write-us__error');
+        phoneInput.focus();
+      }
+
+      if (!customerInput.value) {
+        customerInput.classList.add('write-us__error');
+        customerInput.focus();
+      }
     }
 
-    phoneInput.reportValidity();
-  };
+    phoneInput.addEventListener('input', function () {
+      phoneInput.classList.remove('write-us__error');
+    });
 
-  phoneInput.addEventListener('input', onPhoneInput);
+    customerInput.addEventListener('input', function () {
+      customerInput.classList.remove('write-us__error');
+    });
+  });
 
 })();
+
+
