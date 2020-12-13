@@ -46,8 +46,7 @@
   width: 330px;
 
   p {
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 5px 0 20px;
     font-weight: 600;
     font-size: 17px;
     line-height: 1.65;
@@ -64,7 +63,7 @@
 
 @media (max-width: $tablet-width) {
   .header {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
     min-height: 340px;
     background: none;
   }
@@ -108,10 +107,10 @@
   .header__write-us {
     width: 324px;
     margin: 0 auto;
-    padding: 0 21px;
+    padding: 0;
 
     p {
-      margin-bottom: 30px;
+      margin: 0 auto 30px;
       font-size: 18px;
       line-height: 1.55;
       color: $page--txt;

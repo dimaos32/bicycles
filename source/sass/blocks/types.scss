@@ -1,6 +1,6 @@
 .types {
   padding-top: 150px;
-  padding-bottom: 95px;
+  padding-bottom: 100px;
   background-color: $types--bg;
 
   h2 {
@@ -189,6 +189,7 @@
   }
 
   .types__item {
+    margin: 0;
     margin-bottom: 40px;
   }
 

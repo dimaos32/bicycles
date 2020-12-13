@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Велосипеды</title>
-  <link rel="preload" href="fonts/opensans-regular.woff2" as="font">
+  <!-- <link rel="preload" href="fonts/opensans-regular.woff2" as="font">
   <link rel="preload" href="fonts/opensans-semibold.woff2" as="font">
   <link rel="preload" href="fonts/opensans-bold.woff2" as="font">
-  <link rel="preload" href="fonts/opensans-ligth.woff2" as="font">
+  <link rel="preload" href="fonts/opensans-ligth.woff2" as="font"> -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -54,7 +54,7 @@
       <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
       <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden" for="customer">Ваше имя</label>
-        <input type="text" name="customer" id="customer" placeholder="Введите Ваше Имя">
+        <input type="text" name="customer" id="customer" placeholder="Введите Ваше Имя" required="">
         <label class="visually-hidden" for="phone">Ваштелефон (обязательно)</label>
         <input type="tel" name="phone" id="phone" placeholder="Введите Ваш номер телефона" required="">
         <button class="btn" type="submit">Подобрать велосипед мечты</button>

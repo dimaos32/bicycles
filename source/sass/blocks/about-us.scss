@@ -24,12 +24,13 @@
 
 .about-us__item {
   position: relative;
-  width: 270px;
-  margin: 0 15px 45px;
+  width: 260px;
+  margin: 0 20px 45px;
   padding-top: 55px;
   font-size: 22px;
   line-height: 1.55;
   text-align: center;
+  letter-spacing: -0.5px;
 
   &::before {
     position: absolute;
@@ -52,7 +53,7 @@
 @media (min-width: $desktop-width-max) {
   .about-us__list {
     width: 1200px;
-    margin: 0 -15px;
+    margin: 0 -17px;
   }
 }
 
@@ -61,16 +62,20 @@
     margin-bottom: 25px;
 
     h2 {
-      margin-bottom: 30px;
+      margin: 0 -5px 30px;
       font-size: 24px;
       line-height: 1.7;
     }
+  }
+
+  .about-us__item {
+    padding-top: 50px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .about-us {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
 
   .about-us__list {
@@ -79,5 +84,8 @@
 
   .about-us__item {
     margin: 0 auto 35px;
+    padding-top: 55px;
+    font-size: 18px;
+    line-height: 1.9;
   }
 }
