@@ -70,6 +70,16 @@
     flex-direction: column;
   }
 
+  .contacts__list {
+    &:not(:last-of-type) {
+      margin-bottom: 5px;
+    }
+
+    &:last-of-type {
+      padding-right: 20px;
+    }
+  }
+
   .contacts__link {
     margin: 0;
   }
