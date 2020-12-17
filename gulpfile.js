@@ -38,9 +38,7 @@ gulp.task('javascript', function () {
     './source/js/form.js',
     './source/js/scroll.js',
   ])
-      .pipe(sourcemap.init())
       .pipe(concat('main.js'))
-      .pipe(sourcemap.write())
       .pipe(gulp.dest('build/js'));
 });
 
