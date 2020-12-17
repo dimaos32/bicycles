@@ -27,6 +27,7 @@
   src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../fonts/opensans-bold.woff2") format("woff2"), url("../fonts/opensans-bold.woff") format("woff"); }
 
 html {
+  scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
